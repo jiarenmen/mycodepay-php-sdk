@@ -53,7 +53,7 @@ $returnUrl='https://www.baidu.com';
 
 <div class="body">
     <h1 class="mod-title">
-        <span class="ico-wechat"></span><span class="text">微信支付</span>
+        <span class="ico-wechat"></span><span class="text"><?php echo $payTypeName;?>支付</span>
     </h1>
     <div class="mod-ct">
         <div class="order">
