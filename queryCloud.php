@@ -18,7 +18,7 @@ $res=json_decode($myCodePay->post($codepay_config['url']."/api/api/queryOrder",$
 if(isset($res['code'])){
 	if($res['code']==1){
 		//查询成功
-		
+
 		/**  以下为$res的结构
 		Array
 		(
@@ -30,7 +30,7 @@ if(isset($res['code'])){
 					[out_trade_no] => 20220702141819
 					[price] => 0.01
 					[original_price] => 0.01
-					[type] => 0
+					[pay_type] => 1
 					[create_time] => 1656771508
 					[payment_time] => 0
 					[timeout_time] => 1656771808
