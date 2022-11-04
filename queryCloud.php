@@ -13,7 +13,6 @@ $data=array(
 
 //生成签名并加入到请求参数里
 $data['sign']=$myCodePay->getSign($codepay_config['key'],$data);
-
 $res=json_decode($myCodePay->post($codepay_config['url']."/api/api/queryOrder",$data),true);
 if(isset($res['code'])){
 	if($res['code']==1){
@@ -26,15 +25,15 @@ if(isset($res['code'])){
 			[message] => 查询成功
 			[data] => Array
 				(
-					[order_no] => 2022070222182860580173
-					[out_trade_no] => 20220702141819
-					[price] => 0.01
-					[original_price] => 0.01
-					[pay_type] => 1
-					[create_time] => 1656771508
-					[payment_time] => 0
-					[timeout_time] => 1656771808
-					[status] => 0
+                    [order_no] => 2022081010411372244843
+                    [out_trade_no] => 20220810104113
+                    [price] => 0.05
+                    [original_price] => 0.02
+                    [pay_type] => 1
+                    [create_time] => 1660099273
+                    [payment_time] => 0
+                    [timeout_time] => 1660099573
+                    [pay_status] => 0
 				)
 
 		)
